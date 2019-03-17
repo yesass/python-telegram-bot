@@ -23,11 +23,11 @@ except ImportError:
     import sys
     sys.exit(1)
 
-speech_key, service_region = "cc7a8e8c24be4c9c89bed76862ac1a36", "eastasia"
+speech_key, service_region = "", "eastasia"
 update_id = None
 headers = {
     'Content-Type': 'application/json',
-    'Ocp-Apim-Subscription-Key': '38ac0e4c9e944536b710626ab5c3608c',
+    'Ocp-Apim-Subscription-Key': '',
 }
 params = urllib.parse.urlencode({
 })
@@ -94,7 +94,7 @@ def main():
     """Run the bot."""
     global update_id
     # Telegram Bot Authorization Token
-    bot = telegram.Bot('833895023:AAF9yjdikaiAdsvY2TUmPtw2rxJttQ9TCxA')
+    bot = telegram.Bot('')
 
     # get the first pending update_id, this is so we can skip over it in case
     # we get an "Unauthorized" exception.
